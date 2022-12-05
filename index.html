@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+        <div class="bikes">
+            <li><img onclick="image('1bike.png');color('#e5e5e5');bg('purple')" src="./1bike.png"></li>
+            <li><img onclick="image('2bike.png');color('white');bg('rgba(225,0,0,0.7)')" src="./2bike.png"></li>
+            <li><img onclick="image('1bike.png');color('#e5e5e5');bg('linear-gradient(70deg,yellow,green)')"
+                    src="./1bike.png"></li>
+        </div>
+        <div class="bike">
+            <img class="big" src="./1bike.png">
+        </div>
+        <div class="content">
+            <p>🔥 Let's Ride 🔥</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+            <h5>Lorem ipsum dolor consectetur adipisicing </h5>
+        </div>
+    </div>
+</body>
+<script>
+    function image(img) {
+        document.querySelector(".big").src = img
+    }
+    function color(c) {
+        const path = document.querySelector(".path").style.background = c
+    }
+    function bg(bgc) {
+        document.querySelector(".container").style.background = bgc
+    }
+</script>
+
+</html>

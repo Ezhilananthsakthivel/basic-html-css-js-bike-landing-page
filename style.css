@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 145, 221);
+    list-style: none
+}
+ul{
+    position: absolute;
+    right: 3%;
+    top: 5%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+}
+.bikes{
+    padding-top: 10%;
+}
+.bikes li{
+    margin-bottom: 50px;
+    position: relative;
+}
+.bikes img{
+    display: block;
+    max-width: 150px;
+    transition: 0.5s;
+}
+.bikes img:hover{
+    transition: 0.8s;
+    transform: translateX(20%);
+}
+.bike img{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    max-width: 700px;
+    max-height: 600px;
+
+}
+.content{
+    position: absolute;
+    max-width: 55%;
+    right: 5%;
+    top: 30%;
+}
+.content p{
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content h1{
+    font-weight: bold;
+    color: rgb(10, 240, 240);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.content h5{
+    margin-top: 3%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5)
+}
+.path{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    clip-path: circle(600px at left 350px);
+
+}
